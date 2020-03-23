@@ -1,0 +1,291 @@
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+#navbar {
+    background-color: #F2F2F2;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.fill {
+    height: calc(100vh - 10px);
+}
+
+body {
+    /* padding-top: 60px; */
+    /* space for the top nav bar */
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+#appBuckets {
+    overflow: auto;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+#forgeViewer {
+    width: 100%;
+    background-color: white;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-create-bucket {
+    float: right;
+}
+
+#uploadFile {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+#hiddenUploadField {
+    height: 0;
+}
+
+.navbar-default {
+    border: none;
+    background-color: rgb(230, 230, 230);
+}
+
+.modal-content {
+    min-width: 275px;
+}
+
+.btn-info {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-info:hover {
+    background-color: #1860a0;
+    border-color: #1860a0;
+}
+
+#showFormCreateBucket:active,
+#showFormCreateBucket:focus,
+#translateObject:active,
+#translateObject:focus {
+    outline: none;
+    background-color: #16568f;
+}
+
+#createNewBucket,
+#cancel {
+    outline: none;
+}
+
+.panel-default>.panel-heading {
+    background-color: #fff;
+}
+
+.panel {
+    margin-bottom: 0;
+}
+
+.handleSelectionExtensionIcon {
+    background-image: url(https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/white/png/24/object-group.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.AnimateCameraExtensionIcon {
+    background-image: url(https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/white/png/24/rotate-left.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transition-width {
+    transition: width 1s ease-in-out;
+}
+
+#textboard {
+    overflow: auto;
+    padding-left: 15px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+#textboard .panel {
+    padding: 10px;
+}
+
+.MarkupIcon {
+    background-image: url(https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/white/png/24/text-width.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.MarkupbrIcon {
+    background-image: url(https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/white/png/24/paint-brush.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Markup3dExtensionIcon {
+    background-image: url(https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/white/png/24/pencil-square-o.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.annotation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 0.5em;
+    max-width: 150px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: .5em;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    transition: opacity .5s;
+    word-wrap: break-word;
+}
+
+.annotation-btn-close {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    top: -10px;
+    background-image: url(../img/closeAnn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+._wt {
+    right: 0;
+    top: -35px;
+}
+
+.annotation-without-text {
+    background: none;
+}
+
+.annotation-close {
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/close.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.annotation-close:hover {
+    background-image: url(../img/close_active.png);
+}
+
+.annotationIndex {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.text-annotation {
+    border-radius: 5px;
+    width: 234px;
+    height: 242px;
+    margin: 10px 5px 10px 5px;
+    color: black;
+    resize: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+    border: none;
+}
+
+.an-cl-btn {
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 50px;
+    background-position: 0 19px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.viewer {
+    padding: 0;
+    background-color: white;
+}
+
+.textboard {
+    border-radius: 5px;
+    padding: 0 5px;
+    color: white;
+    text-align: justify;
+}
+
+.textboard .headtext {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textboard .maintext {
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textboard .object {
+    color: rgb(29, 122, 199);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.textboard .object:hover {
+    color: rgb(64, 155, 230);
+}
