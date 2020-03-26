@@ -27,9 +27,7 @@ body {
 }
 
 #appBuckets {
-    overflow: auto;
     width: 100%;
-    height: calc(100vh - 150px);
 }
 
 #forgeViewer {
@@ -188,6 +186,10 @@ body {
     background-size: cover;
     opacity: 0;
     transition: opacity 0.5s;
+}
+
+.annotation-btn-close:hover {
+    background-image: url(../img/closeAnn_.png);
 }
 
 ._wt {
