@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    padding: 20px 15%;
+    padding: 20px 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     color: #3E3E3E;
@@ -37,6 +37,7 @@ main {
 
 .task {
     margin-top: 30px;
+    text-indent: 20px;
 }
 
 .targets {
@@ -81,10 +82,19 @@ main {
 
 .work {
     margin-top: 15px;
+    text-align: justify;
 }
 
 .work h3 {
     margin-bottom: 10px;
+}
+.work p{
+    text-indent: 20px;
+}
+
+.work .img {
+    text-align: center;
+    margin-top: 5px;
 }
 
 .links h3 {
@@ -92,16 +102,19 @@ main {
     margin-bottom: 10px;
 }
 
+.work a,
 .links a {
     text-decoration: none;
     transition: all 0.3s;
     color: rgb(27, 27, 167);
 }
 
+.work a:visited,
 .links a:visited {
     text-decoration: none;
 }
 
+.work a:hover,
 .links a:hover {
     color: rgb(91, 142, 209);
     text-decoration: underline;
