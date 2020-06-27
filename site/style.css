@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 20px 10%;
@@ -26,6 +30,50 @@ p {
     margin: 0;
 }
 
+.menu{
+    display: flex;
+    padding: 15px 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.menu-item{
+    margin-right: 30px;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.menu-item:last-child{
+    margin-right: 0;
+}
+
+.link{
+    color: rgb(29, 122, 199);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    text-indent: 0;
+}
+
+.link:after{
+    background-color: rgb(29, 122, 199);
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+.link:visited{
+    text-decoration: none;
+}
+
 main {
     font-size: 20px;
 }
@@ -36,8 +84,7 @@ main {
 }
 
 .task {
-    margin-top: 30px;
-    text-indent: 20px;
+    font-size: 22px;
 }
 
 .targets {
@@ -49,10 +96,6 @@ main {
 .duties ol {
     margin-top: 5px;
     margin-bottom: 15px;
-}
-
-.targets ul li {
-    font-size: 18px;
 }
 
 .group {
@@ -100,22 +143,4 @@ main {
 .links h3 {
     margin-top: 15px;
     margin-bottom: 10px;
-}
-
-.work a,
-.links a {
-    text-decoration: none;
-    transition: all 0.3s;
-    color: rgb(27, 27, 167);
-}
-
-.work a:visited,
-.links a:visited {
-    text-decoration: none;
-}
-
-.work a:hover,
-.links a:hover {
-    color: rgb(91, 142, 209);
-    text-decoration: underline;
 }
