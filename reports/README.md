@@ -23,4 +23,4 @@
 ## Отчёты
 
 [Отчет](Report.docx)
-[Презентация](Presentation.pptx)
+[Постер](Poster.png)
