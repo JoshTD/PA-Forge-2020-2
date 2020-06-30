@@ -87,11 +87,12 @@ main {
     font-size: 22px;
 }
 
-.targets {
+.targets, .stages {
     margin-top: 15px;
 }
 
 .targets ul,
+.stages ul,
 .team ul,
 .duties ol {
     margin-top: 5px;
